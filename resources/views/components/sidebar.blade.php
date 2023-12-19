@@ -1,7 +1,7 @@
 <div class="main-sidebar sidebar-style-2">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand">
-            <a href="index.html">APLIKASI POS</a>
+            <a href="home">APLIKASI POS</a>
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
             <a href="index.html">CT</a>
