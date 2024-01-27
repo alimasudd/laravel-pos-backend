@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Edit User')
+@section('title', 'Update User')
 
 @push('style')
     <!-- CSS Libraries -->
@@ -63,7 +63,7 @@
                                     </div>
                                 @enderror
                             </div>
-                            <div class="form-group">
+                            <div class="form-group"> 
                                 <label>Phone</label>
                                 <input type="number" class="form-control" name="phone" value="{{ $user->phone }}">
                             </div>
