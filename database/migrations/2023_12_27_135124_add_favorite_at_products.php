@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::table('products', function (Blueprint $table) {
             //is_best_seller
-            $table->boolean('is_favorite')->default(false);
+            $table->boolean('is_best_seller')->default(false);
         });
     }
 
@@ -24,7 +24,7 @@ return new class extends Migration
     {
         Schema::table('products', function (Blueprint $table) {
             //is_favorite
-            $table->dropColumn('is_favorite');
+            $table->dropColumn('is_best_seller');
         });
     }
 };
