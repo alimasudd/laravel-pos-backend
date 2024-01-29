@@ -44,6 +44,19 @@ class ProductController extends Controller
             'image' => $filename,
             'is_favorite' => $request->is_favorite
         ]);
+
+        if ($product) {
+            return response()->json([
+                'success' => true,
+                'message' => 'Product Created',
+                'data' => $product
+            ], 201);
+        } else {
+            return response()->json([
+                'success' => false,
+                'message' => 'Product Failed to Save',
+            ], 409);
+        }
     }
 
     /**
